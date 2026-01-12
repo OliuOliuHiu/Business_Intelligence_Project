@@ -3,7 +3,7 @@
 ## Overview
 This project demonstrates an end to end Business Intelligence pipeline built on a Medallion Architecture using Databricks and Power BI. The pipeline ingests raw operational data, transforms it through Bronze, Silver, and Gold layers, and exposes curated analytical datasets for reporting.
 
-The objective of the project is to show how raw data can be systematically processed into clean, trusted, and analytics ready data.
+The objective of the project is to show how raw data can be processed into clean, trusted, and analytics ready data.
 
 ## Architecture
 The overall system architecture is shown below.
@@ -35,13 +35,13 @@ BI_PROJECT_COURSE/
 │   └── auto_create_view_gold_layer.sql
 │
 ├── Architecture.png              # System architecture diagram
-├── pipeline_execution_result.pdf # Pipeline execution log or report
+├── pipeline_execution_result.pdf # Pipeline execution report
 ├── README.md                     # Project documentation
 └── .gitignore   
 ```
 
 ## Workflow
-1. Load or restore raw data into the landing zone.
+1. Restore raw data into the landing zone.
 2. Run the Bronze to Silver transformation notebook in Databricks.
 3. Run the Silver to Gold transformation notebook in Databricks.
 4. Execute SQL scripts to create Gold layer analytical views.
