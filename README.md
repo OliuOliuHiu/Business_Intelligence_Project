@@ -40,21 +40,3 @@ BI_PROJECT_COURSE/
 └── .gitignore   
 ```
 
-## Workflow
-1. Restore raw data into the landing zone.
-2. Run the Bronze to Silver transformation notebook in Databricks.
-3. Run the Silver to Gold transformation notebook in Databricks.
-4. Execute SQL scripts to create Gold layer analytical views.
-5. Open the Power BI file and refresh the dataset.
-
-## Output
-- Curated Gold layer tables for analytics.
-- SQL views for reporting and consumption.
-- Power BI dashboard for business insights.
-
-## Tools and Technologies
-- Databricks and PySpark
-- Delta Lake and Parquet
-- SQL
-- Power BI
-
